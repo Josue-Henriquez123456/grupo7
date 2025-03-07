@@ -1,0 +1,30 @@
+package sistema;
+
+/**
+ *
+ * @author 
+ */
+public abstract class Doctor  extends Persona {
+     private String area;
+    
+    public Doctor() {
+    }
+    
+    public Doctor(String nombre, String apellido, int edad, double salario, String area) {
+        super(nombre, apellido, edad, salario);
+        this.area = area;
+    }
+    
+    public String getArea() {
+        return area;
+    }
+    
+    public void setArea(String area) {
+        this.area = area;
+    }
+    
+    @Override
+    public String toString() {
+        return super.toString() + "\nÁrea de especialidad: " + area;
+    }
+}
